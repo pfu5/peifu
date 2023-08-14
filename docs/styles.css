@@ -60,7 +60,11 @@ section {
 footer {
     position: fixed;
     bottom: 0;
+<<<<<<< HEAD
     left: 40;
+=======
+    left: 0;
+>>>>>>> 001b547507c06006b39a77d9edd7d5c35d3ef7ff
     display: flex;
     flex-direction: column;
     align-items: center;
