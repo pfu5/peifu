@@ -29,7 +29,7 @@ h1 {
 }
 
 h2 {
-    margin: 3px;
+    margin: 5px;
     font-weight: 300;
     text-align: center;
 }
@@ -49,7 +49,7 @@ section {
 }
 
 .hero-section {
-    margin-top: 17vh;
+    margin-top: 12vh;
     text-align:center;
 }
 
@@ -69,6 +69,11 @@ footer {
 footer ul {
     display: flex;
     padding: 30px;
+}
+
+footer h2 {
+    display: flex;
+    padding: 20px;
 }
 
 .options {
