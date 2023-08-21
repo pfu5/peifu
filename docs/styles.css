@@ -60,11 +60,7 @@ section {
 footer {
     position: fixed;
     bottom: 0;
-<<<<<<< HEAD
-    left: 40;
-=======
-    left: 0;
->>>>>>> 001b547507c06006b39a77d9edd7d5c35d3ef7ff
+    left: 60;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,12 +68,12 @@ footer {
 
 footer ul {
     display: flex;
-    padding: 30px;
+    padding: 20px;
 }
 
 footer h2 {
     display: flex;
-    padding: 20px;
+    padding: 20px 10px 0px 40px;
 }
 
 .options {
@@ -95,7 +91,7 @@ a {
 
 .socials {
     width: 70px;
-    height: 200px;
+    height: 140px;
     background-color: rgb(124, 147, 166);
     border-radius: 20px 0 0 20px;
     position: fixed;
@@ -111,7 +107,7 @@ a {
 
 .social {
     width: 100%;
-    height: 33%;
+    height: 45%;
 }
 
 .wave {
@@ -154,18 +150,25 @@ a:hover {
 /*about me*/
 
 .about-me {
-    width: 50%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     align-items: center;
+    grid-template-columns: 1fr 1fr 0.5fr;
+    column-gap: 15px;
 }
 
 .about-me img {
-    height: 200px;
-    border-radius: 50%;
-    margin: 40px 10px 10px 10px;
+    height: 300px;
+    border-radius: 35%;
+    margin: 40px 5px 10px 200px;
+    position: flex;
 }
+
+.about_text {
+    width: 60%
+    position: relative;
+}
+
+
 .sub-pages-footer {
     position: fixed;
 }
