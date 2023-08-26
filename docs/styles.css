@@ -48,6 +48,11 @@ section {
     align-items: center;
 }
 
+.welcome-section {
+    margin-top: 10vh;
+    text-align:center;
+}
+
 .hero-section {
     margin-top: 12vh;
     text-align:center;
@@ -113,7 +118,7 @@ a {
 .wave {
     fill: rgb(0,0,0);
     width: 100vw;
-    height: 60vh;
+    height: 50vh;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -153,19 +158,18 @@ a:hover {
 .about-me {
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 1fr 0.5fr;
+    grid-template-columns: 0.4fr 0.5fr 3fr 0.4fr;
     column-gap: 15px;
 }
 
 .about-me img {
-    height: 300px;
+    height: 220px;
     border-radius: 40%;
-    margin: 40px 5px 10px 200px;
-    position: flex;
+    align-items: center;
 }
 
 .about_text {
-    width: 60%
+    width: 100%;
     position: relative;
 }
 
