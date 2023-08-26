@@ -73,12 +73,12 @@ footer {
 
 footer ul {
     display: flex;
-    padding: 20px;
+    padding: 0px 10px 20px 34px;
 }
 
 footer h2 {
     display: flex;
-    padding: 20px 10px 0px 40px;
+    padding: 20px 10px 0px 0px;
 }
 
 .options {
@@ -168,16 +168,24 @@ a:hover {
     align-items: center;
 }
 
-.about_text {
-    width: 100%;
-    position: relative;
-}
-
-
-.sub-pages-footer {
+/* .sub-pages-footer {
     position: fixed;
+    bottom: 0;
+    left: 60;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+/* .sub-pages-footer ul {
+    display: flex;
+    padding: 0px 10px 20px 34px;
 }
 
+.sub-pages-footer h2 {
+    display: flex;
+    padding: 20px 10px 0px 0px;
+}*/
 
 @media only screen and (max-width: 600px) {
     .sub-pages-footer {
@@ -252,10 +260,36 @@ form button {
     }
 }
 
+/* project page */
+/* directory */
+.projects-grid {
+    padding: 50px 25px 20px 25px;
+}
 
+.img-li {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.2em;
+    margin: 0;
+}
 
+.subtitle-proj {
+    font-size: 40px;
+}
 
+/* project pages */
+.proj-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 0px 250px 20px 250px;
+}
 
+.proj-content img {
+    height: 400px;
+    align-items: center;
+}
 
 
 

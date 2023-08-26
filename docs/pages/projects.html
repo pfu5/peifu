@@ -1,42 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About me</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+
 <header>
     <ul>
         <a href="../../index.html"><li>Home</li></a>
         <a href="about.html"><li>About</li></a>
-        <a href="underconstruction.html"><li>Projects</li></a>
+        <a href="projects.html"><li>Projects</li></a>
         <a href="underconstruction.html"><li>Art</li></a>
         <a href="underconstruction.html"><li>Contact</li></a>
     </ul>
+    <style>
+        #grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-gap: 15px;
+        }
+        #grid > div {
+            font-size: 70px;
+            padding: 0.75em 0em 0.8em 0em;
+            color: #ffffff;
+            background: #0a3149;
+            text-align: center;
+        }
+    </style>
 </header>
 
 <section>
     <h2 class="subtitle">projects</h2>
-
-    
 </section>
 
-<footer class="sub-pages-footer">
-    <ul>
+<body class="projects-grid">
+    <p> </p>
+    <div id="grid">
+      <div>
+            <a href="../posts/malaria-scope.html">
+                <img src="../pics/malaria-scope-cover.png" style="width:250px;">
+            </a>
+            <a href="../posts/malaria-scope.html">
+                <li class="img-li">Label-free Malaria Microscope</li>
+            </a>
+      </div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+</body>
 
+<footer>
+    <h2>Pei Fu's Portfolio</h2>
+    <ul>
         <a href="https://www.linkedin.com/peifu">
             <li>LinkedIn</li>
         </a>
         <a href="https://www.github.com/pfu5/">
             <li>Github</li>
         </a>
-        <a href="../contact.html">
+        <a href="contact.html">
             <li>Contact</li>
         </a>
     </ul>
 </footer>
 
-</body>
 </html>
