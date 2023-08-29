@@ -132,6 +132,39 @@ a:hover {
     color: rgb(255,0,166);
 }
 
+/* footer */
+
+.header-card {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 13%;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .banner ul {
+    display: flex;
+    padding: 0px 10px 20px 34px;
+ }
+
+ h4 {
+    margin: 5px;
+    font-weight: 500;
+    padding: 20px 10px 0px 40px;
+}
+
 /*work page*/
 
 .work-details {
@@ -287,7 +320,7 @@ form button {
 }
 
 .proj-content img {
-    height: 400px;
+    height: 220px;
     align-items: center;
 }
 
