@@ -30,7 +30,7 @@ h1 {
 
 h2 {
     margin: 5px;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
 }
 
@@ -312,16 +312,25 @@ form button {
 
 /* project pages */
 .proj-content {
-    display: flex;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 150px;
+    width: 70%;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    padding: 0px 250px 20px 250px;
+    padding: 0px 250px 20px 250px; */
 }
 
 .proj-content img {
-    height: 220px;
-    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    border: solid 10px #233e61;
 }
 
 
