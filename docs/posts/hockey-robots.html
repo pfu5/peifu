@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hockey Robots</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        .row {
+          display: flex;
+        }
+        
+        .column {
+          flex: 50%;
+          padding: 5px;
+        }
+    </style>
+</head>
+
+<header>
+    <ul>
+        <a href="../../index.html"><li>Home</li></a>
+        <a href="../pages/about.html"><li>About</li></a>
+        <a href="../pages/projects.html"><li>Projects</li></a>
+        <a href="underconstruction.html"><li>Art</li></a>
+        <a href="underconstruction.html"><li>Contact</li></a>
+    </ul>
+</header>
+
+<section>
+    <h2 class="subtitle-proj">Hockey Robots Project</h2>
+
+    <div class="proj-content">
+
+        <h2>Summary</h2>
+        <div>
+            <p>This project was done as part of a mechatronics course, where two autonomous robots per team battled against one another. For my team, we decided to have designated striker and goalie, and each of them utilized sensor feedbacks to navigate in addition to the location data broadcasted from the overhead camera.</p>
+        </div>
+
+        <h2>Context</h2>
+        <div class="row"><p>Design and build two fully automated robots to compete in the hockey tournament. The robots shall have the following functions: Track the puck, attempt to score a goal, and defend the goal. </p>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="../pics/HR-striker.png"
+                        style="width:auto;
+                        height:290px;"
+                        alt="Striker Robot">
+            </div>
+            <div class="column">
+                <img src="../pics/HR-goalie.png"
+                        style="width:auto;
+                        height:290px;"
+                        alt="Goalie Robot">  
+            </div>
+        </div>
+        <div><p>I will mainly focus on the striker robot solution for now, and will add more content about the goalie to this post in the future.</p></div>
+
+        <h2>Solution</h2>
+        <div>
+            <p>The chassis of the robot was design using Solidworks and constructed out of laser-cut acrylic sheets. A caster wheel
+                was installed in addition to the motored wheels for stability. One Pixy2 camera and two ultrasonic sensor were used
+                as feedback for the robot navigation. The robot uses the coordinates received from the RF transceiver to calculate
+                the turn radius and turn toward the puck until the Pixy2 camera picks up the puck location. Once the camera
+                notices the puck, the robot moves toward the pick until it is in the scooper. Lastly, the robot shoots the puck toward
+                the goal once the camera sees the color coded goal.</p>
+            <img src="../pics/HR-striker-flow.png"
+                    style="width:200;
+                    height:auto;"
+                    alt="Striker Robot Workflow">
+            <img src="../pics/HR-striker-circuit.png"
+                    style="width:200;
+                    height:auto;"
+                    alt="Striker Robot Circuit Diagram">
+            <p>The following diagrams show examples of how turn radius is calculated based on the relative position of the robot vs goal and the puck.</p>
+            <img src="../pics/HR-striker-calc.png"
+                    style="width:200;
+                    height:auto;"
+                    alt="Striker Robot Radius Calculation">
+        </div>
+
+    </div>
+</section>
+
+<div class="header-card">
+        <h4>Pei Fu's Portfolio</h4>
+</div>
+<div class="banner">
+    <ul>
+        <a href="https://www.linkedin.com/peifu">
+            <li>LinkedIn</li>
+        </a>
+        <a href="https://www.github.com/pfu5/">
+            <li>Github</li>
+        </a>
+        <a href="../contact.html">
+            <li>Contact</li>
+        </a>
+    </ul>
+</div>
+
+</html>
