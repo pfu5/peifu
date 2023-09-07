@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About me</title>
     <link rel="stylesheet" href="../styles.css">
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        .row {
+          display: flex;
+        }
+        
+        .column {
+          flex: 50%;
+          padding: 5px;
+        }
+    </style>
 </head>
 
 <header>
@@ -29,13 +43,15 @@
         <div>
 
         <h2>Context</h2>
-        <div>
-            <img src="../pics/MS-context.png"
-                 style="width:400px;
-                        height:auto;">
-            <img src="../pics/MS-consumable.png" 
-                 style="width:200px;
-                        height:auto;">
+        <div class="row">
+            <div class="column">
+                <img src="../pics/MS-context.png"
+                    style="width:400px;
+                            height:auto;"></div>
+            <div class="column">
+                <img src="../pics/MS-consumable.png" 
+                    style="width:200px;
+                            height:auto;"></div>
         </div>
         <div>
             <p>The Label-Free Malaria Microscope is an automatic infected cell counting diagnosis microscope. Traditionally, in addition to clinical diagnosis, malaria is diagnosed with microscopic examination of patient’s blood sample, where a trained personnel physically counts the number of parasite infected red blood cells. With automatic focusing and counting through machine learning methods, it eliminates the long and arduous nature of the current state of the art technique. Furthermore, label-free means that the samples were examined without the dyeing process commonly used to enhance parasite visibility. By directly examining the samples un-labeled, it avoids killing the cells/parasites and shortens the preparation process on top of the time saved through automatic microscopic diagnosis. </p>
@@ -55,7 +71,7 @@
         <div>
             <p>A malaria microscope was built from scratch following the existing build guide. The process included 3D printing, laser cutting, machining, soldering, wiring, and debugging the final product. The build guide was revised throughout based on the build experience, while fit issues and wire management were also addressed. Lastly, the entire system was validated with a thorough debugging process that tested out every sensors and actuators. </p>
             <img src="../pics/MS-assembly.png" 
-                 style="width:750px;
+                 style="width:700px;
                         height:auto;"> 
         </div>
     </div>
