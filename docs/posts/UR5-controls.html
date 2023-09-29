@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Malaria Diagnosis Microscope</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        .row {
+          display: flex;
+        }
+        
+        .column {
+          flex: 50%;
+          padding: 5px;
+        }
+    </style>
+</head>
+
+<header>
+    <ul>
+        <a href="../../index.html"><li>Home</li></a>
+        <a href="../pages/about.html"><li>About</li></a>
+        <a href="../pages/projects.html"><li>Projects</li></a>
+        <a href="../pages/art.html"><li>Art</li></a>
+        <a href="../pages/contact.html"><li>Contact</li></a>
+    </ul>
+</header>
+
+<section>
+    <h2 class="subtitle-proj">label-free malaria diagnosis microscope</h2>
+
+    <div class="proj-content">
+
+        <h2>Summary</h2>
+        <div>
+            <p>During my internship at <a href="https://www.czbiohub.org/"><u>Chan Zuckerberg Biohub</u></a>, I worked alongside with the bioengineering team on the development of the Label-Free Malaria Microscope. The objectives focused on quality control software for the custom consumable and manufacturing process of the microscope. For the consumable quality control, an information tracking program was developed in Python. To assess the manufacturing process of the microscope, I was tasked to a ground-up build of the microscope design, provided feedback on the workflow and design modification based on the build experience. Lastly, I also performed a full validation on the sensors and actuators .</p>
+        </div>
+        <div>
+
+        <h2>Context</h2>
+        <div class="row">
+            <div class="column">
+                <img src="../pics/MS-context.png"
+                    style="width:400px;
+                            height:auto;"></div>
+            <div class="column">
+                <img src="../pics/MS-consumable.png" 
+                    style="width:200px;
+                            height:auto;"></div>
+        </div>
+        <div>
+            <p>The Label-Free Malaria Microscope is an automatic infected cell counting diagnosis microscope. Traditionally, in addition to clinical diagnosis, malaria is diagnosed with microscopic examination of patient’s blood sample, where a trained personnel physically counts the number of parasite infected red blood cells. With automatic focusing and counting through machine learning methods, it eliminates the long and arduous nature of the current state of the art technique. Furthermore, label-free means that the samples were examined without the dyeing process commonly used to enhance parasite visibility. By directly examining the samples un-labeled, it avoids killing the cells/parasites and shortens the preparation process on top of the time saved through automatic microscopic diagnosis. </p>
+            <p>The consumables are made out of laser-cut acrylic with laminated ink channel and coverslip; the quality of these consumables are crucial to blood cell flow during the diagnosis. Poor quality can lead to ruptured cells and leaking samples, hence there is a need for systematic lot tracking. Next, the design of the microscope is meant to be publish as open-source technology, hence evaluating the assembly procedure without the influence of the initial design knowledge becomes helpful in this process.</p>        </div>
+        </div>
+
+        <h2>Solution</h2>
+        <div>
+            <p>The program written in Python receives user inputs, sends them to designated Google sheet, and generates a unique printable PDF that aligns with the chips on each sheet. The unique IDs in the PDF are printed directly onto the acrylic layer, which indicates the sample port location and the serial number for each consumable unit. The program is also completed with check cases to provide user feedback and ensure the quality of the data recorded. </p>
+            <img src="../pics/MS-tracking.png"
+                 style="width:500px;
+                        height:auto;">
+            <img src="../pics/MS-label.png"
+                 style="width:500px;
+                        height:auto;"> 
+        </div>
+        <div>
+            <p>A malaria microscope was built from scratch following the existing build guide. The process included 3D printing, laser cutting, machining, soldering, wiring, and debugging of the final product. The build guide was revised throughout based on the build experience, while fit issues and wire management were also addressed. Lastly, the entire system was validated with a thorough debugging process that tested out every sensors and actuators. </p>
+            <img src="../pics/MS-assembly.png" 
+                 style="width:650px;
+                        height:auto;"> 
+
+            <p>Last but not least, below gif shows a snippet of a successful blood run scan done on the microscope after rigorous debugging and troubleshooting.</p>
+            <img src="../pics/MS-bloodrun.gif" 
+            style="width:600px;
+                   height:auto;"> 
+        </div>
+    </div>
+</section>
+
+<div class="header-card"></div>
+<div class="banner">
+    <h4>Pei Fu's Portfolio</h4>
+    <ul>
+        <a href="https://www.linkedin.com/in/peifu">
+            <li>LinkedIn</li>
+        </a>
+        <a href="https://www.github.com/pfu5/">
+            <li>Github</li>
+        </a>
+        <a href="../pages/contact.html">
+            <li>Contact</li>
+        </a>
+    </ul>
+</div>
+
+</body>
+</html>
+
+</html>

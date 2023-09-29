@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About me</title>
+    <title>Malaria Diagnosis Microscope</title>
     <link rel="stylesheet" href="../styles.css">
     <style>
         * {
@@ -27,7 +27,7 @@
         <a href="../pages/about.html"><li>About</li></a>
         <a href="../pages/projects.html"><li>Projects</li></a>
         <a href="../pages/art.html"><li>Art</li></a>
-        <a href="underconstruction.html"><li>Contact</li></a>
+        <a href="../pages/contact.html"><li>Contact</li></a>
     </ul>
 </header>
 
@@ -38,7 +38,7 @@
 
         <h2>Summary</h2>
         <div>
-            <p>During my internship at <a href="https://www.czbiohub.org/"><u>Chan Zuckerberg Biohub</u></a>, I worked alongside with the bioengineering team on the development of the Label-Free Malaria Microscope. The objectives focused on quality control for the custom consumable and the manufacturing process of the microscope. An information tracking program was written in Python to receive user inputs, generate unique labels, and send the information to a designated Google Sheet. To assess the manufacturing process of the microscope, I was tasked to build the latest version of the microscope design from the ground up, provided feedback on the documentation and design based on the build experience.</p>
+            <p>During my internship at <a href="https://www.czbiohub.org/"><u>Chan Zuckerberg Biohub</u></a>, I worked alongside with the bioengineering team on the development of the Label-Free Malaria Microscope. The objectives focused on quality control software for the custom consumable and manufacturing process of the microscope. For the consumable quality control, an information tracking program was developed in Python. To assess the manufacturing process of the microscope, I was tasked to a ground-up build of the microscope design, provided feedback on the workflow and design modification based on the build experience. Lastly, I also performed a full validation on the sensors and actuators .</p>
         </div>
         <div>
 
@@ -60,37 +60,27 @@
 
         <h2>Solution</h2>
         <div>
-            <p>The program written in Python takes in user inputs, sends the information to a Google sheet, and generates a printable PDF that aligns with the chips on each sheet. The PDF is printed directly onto the acrylic layer, which indicates the sample port location and the serial number for each consumable. The program is also completed with check cases to ensure the quality of the data recorded. </p>
+            <p>The program written in Python receives user inputs, sends them to designated Google sheet, and generates a unique printable PDF that aligns with the chips on each sheet. The unique IDs in the PDF are printed directly onto the acrylic layer, which indicates the sample port location and the serial number for each consumable unit. The program is also completed with check cases to provide user feedback and ensure the quality of the data recorded. </p>
             <img src="../pics/MS-tracking.png"
                  style="width:500px;
                         height:auto;">
-            <img src="../pics/MS-label.png" 
+            <img src="../pics/MS-label.png"
                  style="width:500px;
                         height:auto;"> 
         </div>
         <div>
-            <p>A malaria microscope was built from scratch following the existing build guide. The process included 3D printing, laser cutting, machining, soldering, wiring, and debugging the final product. The build guide was revised throughout based on the build experience, while fit issues and wire management were also addressed. Lastly, the entire system was validated with a thorough debugging process that tested out every sensors and actuators. </p>
+            <p>A malaria microscope was built from scratch following the existing build guide. The process included 3D printing, laser cutting, machining, soldering, wiring, and debugging of the final product. The build guide was revised throughout based on the build experience, while fit issues and wire management were also addressed. Lastly, the entire system was validated with a thorough debugging process that tested out every sensors and actuators. </p>
             <img src="../pics/MS-assembly.png" 
-                 style="width:700px;
+                 style="width:650px;
                         height:auto;"> 
+
+            <p>Last but not least, below gif shows a snippet of a successful blood run scan done on the microscope after rigorous debugging and troubleshooting.</p>
+            <img src="../pics/MS-bloodrun.gif" 
+            style="width:600px;
+                   height:auto;"> 
         </div>
     </div>
 </section>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Under construction</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
-<body>
-<header>
-    <ul>
-        <a href="../../index.html"><li>Home</li></a>
-    </ul>
-</header>
 
 <div class="header-card"></div>
 <div class="banner">
@@ -102,7 +92,7 @@
         <a href="https://www.github.com/pfu5/">
             <li>Github</li>
         </a>
-        <a href="../contact.html">
+        <a href="../pages/contact.html">
             <li>Contact</li>
         </a>
     </ul>
