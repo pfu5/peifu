@@ -97,7 +97,7 @@ a {
 .socials {
     width: 70px;
     height: 140px;
-    background-color: rgb(124, 147, 166);
+    background-color: rgb(130, 170, 201);
     border-radius: 20px 0 0 20px;
     position: fixed;
     right: 0;
@@ -248,12 +248,13 @@ a:hover {
     padding: 5px;
     font-family: 'Josefin Sans', sans-serif;
     padding: 20px 0;
+    background-color: rgb(130, 170, 201);
 }
 
 .form-row .form-control:focus,
 .form-submit textarea:focus {
     outline: 0;
-    background-color: yellow;
+    background-color: rgb(168, 212, 244);
 }
 
 .form-submit textarea {
@@ -265,12 +266,13 @@ a:hover {
     margin-top: 5px;
     font-size: 20px;
     padding: 20px 0;
+    background-color: rgb(130, 170, 201);
 }
 
 form button {
     width: 100%;
-    background-color: rgb(79,177,79);
-    color: rgb(255,255,255);
+    background-color: rgb(27, 92, 162);
+    color: rgb(255, 255, 255);
     border: none;
     font-family: 'Josefin Sans', sans-serif;
     padding: 20px;

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ROS</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        .row {
+          display: flex;
+        }
+        
+        .column {
+          flex: 50%;
+          padding: 5px;
+        }
+    </style>
+</head>
+
+<header>
+    <ul>
+        <a href="../../index.html"><li>Home</li></a>
+        <a href="../pages/about.html"><li>About</li></a>
+        <a href="../pages/projects.html"><li>Projects</li></a>
+        <a href="../pages/art.html"><li>Art</li></a>
+        <a href="../pages/contact.html"><li>Contact</li></a>
+    </ul>
+</header>
+
+<section>
+    <h2 class="subtitle-proj">Controls, Simulation, and Implementation in ROS</h2>
+
+    <div class="proj-content">
+
+        <h2>Summary</h2>
+        <div>
+            <p>The following projects consist of classic control algorithms and robot kinematics implemented in ROS and visualized with Rvis and Gazebo.</p>
+        </div>
+        <div>
+
+        <h2>UR5 Robot Arm</h2>
+        <div>
+            <img src="../pics/UR-cover.png" 
+                style="width:350px;
+                        height:auto;">
+        </div>
+ 
+        <div>
+            <p>To control the 6-DoF robot arm, I started by writing a script that calculates forward kinematic for the UR5. It converts joint angles into rotation and translation values information for each frame shown in red, blue, and green. The resultant joint angles are then be used later during moving controls.</p>
+            <p>Next, “resolved rate control” is implemented to move the joints toward the goal, in which joint velocity is needed to move the robot arm at a constant linear velocity toward the goal coordinates. Joint velocity can be found by multiplying the inverse Jacobian with the body linear velocity of the robot. With that, the gazebo node was ready to simulate the visualization in Rviz.</p>
+            <img src="../pics/ur5.gif" 
+                style="width:400px;
+                       height:auto;">
+            <p>___</p>
+        </div>
+
+        <h2>Jackal Robot</h2>
+        <div>
+            <p><a href="https://clearpathrobotics.com/jackal-small-unmanned-ground-vehicle/"><u>Jackal Unmanned Ground Vehicle (UGV)</u></a> is a fully integrated and ruggedized robot made by Clearpath Robotics for all-terrain operation and experimentation. The robot includes built-in GPS, IMU, and computer. It is also comes with a complete ROS API, which can be used to run simulations in a lab setting.</p>
+            <img src="../pics/Jackal-UGV.jpg" 
+                 style="width:350px;
+                        height:auto;">
+        </div>
+        <div>
+            <p>In this simulation, Extended Kalman Filter Localization is implemented to stabilized GPS and IMU readings during th  (r, p, y) data as is, together the 6-D s system is fed through EKF to predict and correct the system during the drive.</p>
+            <img src="../pics/jackal_robot.gif" 
+                 style="width:450px;
+                        height:auto;">
+            <p>Image Source: https://www.unmannedsystemstechnology.com/</p>
+            <p>Sometimes, you tumble, but you just have to not give up.</p>
+            <img src="../pics/jackal_robot_hill.gif" 
+                 style="width:450px;
+                        height:auto;">
+            <p>___</p>
+        </div>
+
+        <h2>Husky</h2>
+        <div>
+            <p><a href="https://clearpathrobotics.com/husky-unmanned-ground-vehicle-robot/"><u>Husky UGV</u></a> is a larger payloads and customizationable robot also developed by Clearpath Robotics. Like the Jackal, the Husky is fully supported in ROS and is popular among engineers and researchers globally.</p>
+            <img src="../pics/Husky-UGV.jpg" 
+                style="width:400px;
+                        height:auto;">
+            <p>Image Source: https://clearpathrobotics.com/</p>
+        </div>
+        <div>
+            <img src="../pics/husky.gif" 
+                style="width:650px;
+                        height:auto;">
+        </div>
+ 
+        
+    </div>
+</section>
+
+<div class="header-card"></div>
+<div class="banner">
+    <h4>Pei Fu's Portfolio</h4>
+    <ul>
+        <a href="https://www.linkedin.com/in/peifu">
+            <li>LinkedIn</li>
+        </a>
+        <a href="https://www.github.com/pfu5/">
+            <li>Github</li>
+        </a>
+        <a href="../pages/contact.html">
+            <li>Contact</li>
+        </a>
+    </ul>
+</div>
+
+</body>
+</html>
+
+</html>
