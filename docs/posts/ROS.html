@@ -51,7 +51,7 @@
  
         <div>
             <p>To control the 6-DoF robot arm, I started by writing a script that calculates forward kinematic for the UR5. It converts joint angles into rotation and translation values information for each frame shown in red, blue, and green. The resultant joint angles are then be used later during moving controls.</p>
-            <p>Next, “resolved rate control” is implemented to move the joints toward the goal, in which joint velocity is needed to move the robot arm at a constant linear velocity toward the goal coordinates. Joint velocity can be found by multiplying the inverse Jacobian with the body linear velocity of the robot. With that, the gazebo node was ready to simulate the visualization in Rviz.</p>
+            <p>Next, “resolved rate control” is implemented to move the joints toward the goal, in which joint velocity is needed to move the robot arm at a constant linear velocity toward the goal coordinates. Joint velocity can be found by multiplying the inverse Jacobian with the body linear velocity of the robot. With that, the gazebo node was ready to simulate movements before goals through Rviz visualization.</p>
             <img src="../pics/ur5.gif" 
                 style="width:400px;
                        height:auto;">
@@ -66,7 +66,7 @@
                         height:auto;">
         </div>
         <div>
-            <p>In this simulation, Extended Kalman Filter Localization is implemented to stabilized GPS and IMU readings during th  (r, p, y) data as is, together the 6-D s system is fed through EKF to predict and correct the system during the drive.</p>
+            <p>In this simulation, Extended Kalman Filter Localization (EFK) is implemented to stabilized GPS and IMU readings during the drive. The Jackal is characterized by a 6 dimension robotic system s = [x y z r p y]^T where (x, y, z) are the 3D coordinates of the robot and (r, p y) are the orientation robot with respect to a fixed base frame. For (x, y, z), take GPS data in latitude, longitude, and altitude and convert into cartesian system with sample data collected from known position in the simulation. Meanwhile, the IMU gives (r, p, y) data as is, together the 6-D s system is fed through EKF to predict and correct the system during the drive.</p>
             <img src="../pics/jackal_robot.gif" 
                  style="width:450px;
                         height:auto;">
@@ -80,13 +80,15 @@
 
         <h2>Husky</h2>
         <div>
-            <p><a href="https://clearpathrobotics.com/husky-unmanned-ground-vehicle-robot/"><u>Husky UGV</u></a> is a larger payloads and customizationable robot also developed by Clearpath Robotics. Like the Jackal, the Husky is fully supported in ROS and is popular among engineers and researchers globally.</p>
+            <p>Like the Jackal, <a href="https://clearpathrobotics.com/husky-unmanned-ground-vehicle-robot/"><u>Husky UGV</u></a> is developed by Clearpath Robotics, the difference being a larger payloads and customizable top plate. It is also is fully supported in ROS and making it a great model to study.</p>
             <img src="../pics/Husky-UGV.jpg" 
                 style="width:400px;
                         height:auto;">
             <p>Image Source: https://clearpathrobotics.com/</p>
         </div>
         <div>
+            <p>The likelihood fields for range finder first disregard any laser measurement that equals to the maximum possible value of the laser measurement, then calculates the relative location and orientation of the robot based on the sensor measurement. Lastly, the distance information calculated from location and orientation data gets evaluated with gaussian noise, random measurement, the maximum range of the laser, and the coefficient of normal measurement to produce the probability of the measurement being true.</p>
+            <p>The Odometry Motion Model uses the location and rotational sensor data to estimate changes in position over time. The initial rotation of the robot, the rotation of the robot after transition, and the distance traveled in a short period of time are incorporated with zero-mean Gaussian distribution noise to assume noisiness in measurement. The resultant robot position measurement is used as feedback to the mobile robot’s actuation.</p>
             <img src="../pics/husky.gif" 
                 style="width:650px;
                         height:auto;">
